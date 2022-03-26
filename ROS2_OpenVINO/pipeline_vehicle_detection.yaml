@@ -1,0 +1,19 @@
+Pipelines:
+- name: traffic_signs
+  inputs: [RealSenseCamera]
+  infers:
+    - name: ObjectDetection
+      model: .../OpenVINO/IR/IR_ssd_mobilenet_v2_fpnlite_320x320_num_25000/saved_model.xml
+      engine: MYRIAD
+      label: .../OpenVINO/IR/IR_ssd_mobilenet_v2_fpnlite_320x320_num_25000/saved_model.labels
+      batch: 1
+      enable_roi_constraint: true # set enable_roi_constraint to false if you don't want to make the inferred ROI (region of interest) constrained into the camera frame
+     outputs: [ImageWindow, RViz, RosTopic]
+  connects:
+    - left: RealSenseCamera
+      right: [ObjectDetection]
+   - left: ObjectDetection
+      right: [ImageWindow, RosTopic, RViz] 
+
+
+OpenvinoCommon:

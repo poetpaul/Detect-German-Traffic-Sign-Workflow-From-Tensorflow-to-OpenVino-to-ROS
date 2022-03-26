@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>20210628_155934.jpg</filename>
+	<path>D:\own_traffic_sign_project\images\2.Erweiterung\test\20210628_155934.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4656</width>
+		<height>3492</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Keine_Durchfahrt</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2638</xmin>
+			<ymin>1700</ymin>
+			<xmax>2793</xmax>
+			<ymax>1883</ymax>
+		</bndbox>
+	</object>
+</annotation>

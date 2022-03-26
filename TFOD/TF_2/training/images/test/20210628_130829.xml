@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Datenbankerweiterun</folder>
+	<filename>20210628_130829.jpg</filename>
+	<path>D:\own_traffic_sign_project\images\Datenbankerweiterun\20210628_130829.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4656</width>
+		<height>3492</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Keine_Durchfahrt</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2995</xmin>
+			<ymin>1671</ymin>
+			<xmax>3237</xmax>
+			<ymax>1903</ymax>
+		</bndbox>
+	</object>
+</annotation>
